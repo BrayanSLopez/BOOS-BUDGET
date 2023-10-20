@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Press+Start+2P&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'PT Serif', serif;
+    background-color: #0e0707;
+}
+
+.titulo {
+    text-align: center;
+    padding: 20px;
+    background-color: #232D3F;
+    color: #f8f7f7;
+    font-size: 35px;
+    font-family: 'Press Start 2P';
+}
+.subtitle {
+    text-align: center;
+    color: #FFF;
+    padding-bottom: 16px;
+    font-size: 24px;
+    font-family: 'Press Start 2P';
+}
+.container {
+    margin-bottom: 24px;
+}
+.secciones {
+    text-align: center;
+    color:#777ce4;
+    font-size: 20px;
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-direction:row;
+    padding: 8px;
+    column-gap: 16px;
+   
+
+}
+
+.parrafo {
+    text-align: left;
+    padding-top: 20px;
+    color:#c2c2cc;
+    font-size: 20px;
+
+
+}
+
+img {
+    width: 450px;
+    height: 430px;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.articulos {
+    padding-top: 40px;
+    padding-left: 90px;
+    margin: 100px;
+}
+
