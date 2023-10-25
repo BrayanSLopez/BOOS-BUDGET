@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Playpen+Sans&family=Press+Start+2P&family=Tilt+Neon&display=swap');
+
 
 *{
     padding: 0;
@@ -7,31 +8,52 @@
 }
 
 body {
-    font-family: 'PT Serif', serif;
-    background-color: #0e0707;
+    font-family: 'Tilt Neon';
+    background-color: rgba(0,0,0,1);
+    position: relative;
+}
+
+.Logo {
+    position: fixed;
+    width: 680px;
+    height: 680px;
+    top: 30%;
+    z-index: 1;
+}
+
+h1,h2,h3 {
+    margin-bottom: 16px;
+    margin-top: 16px;
+    font-size: 40px !important;
+    font-family: 'Playpen' !important;
+    color: #bf9f63 !important;
+    font-weight: bold !important; 
 }
 
 .titulo {
     text-align: center;
     padding: 20px;
-    background-color: #232D3F;
-    color: #f8f7f7;
-    font-size: 35px;
-    font-family: 'Press Start 2P';
+    margin-top: 50px;
+    background-color: #153940;
+    color: #0e0707;
+    font-size: 45px;
+    font-family: 'Playpen';
 }
 .subtitle {
     text-align: center;
     color: #FFF;
     padding-bottom: 16px;
     font-size: 24px;
-    font-family: 'Press Start 2P';
+    
 }
+
+
 .container {
     margin-bottom: 24px;
 }
 .secciones {
     text-align: center;
-    color:#777ce4;
+    color:#ffffff;
     font-size: 20px;
     display: flex;
     max-width: 1000px;
@@ -39,7 +61,33 @@ body {
     flex-direction:row;
     padding: 8px;
     column-gap: 16px;
-   
+}
+.secciones2 {
+    text-align: center;
+    color:#ffffff;
+    font-size: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 8px;
+    column-gap: 16px;
+}
+
+.secciones3 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-direction: row;
+    column-gap: 16px;
+    align-items: center;
+    font-size: 20px;
+}
+
+.imagenGrafica {
+    object-fit: cover;
+    width:100%;
+    height:100%;
 
 }
 
@@ -50,6 +98,9 @@ body {
     font-size: 20px;
 
 
+}
+.parrafo2 {
+    text-align: center;
 }
 
 img {
