@@ -15,8 +15,8 @@ body {
 
 .Logo {
     position: fixed;
-    width: 680px;
-    height: 680px;
+    width: 480px;
+    height: 480px;
     top: 30%;
     z-index: 1;
 }
