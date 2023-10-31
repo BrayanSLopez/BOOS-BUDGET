@@ -7,6 +7,19 @@
     flex-direction: column;
 }
 
+.btn {
+    display: inline-block;
+    place-items: center;
+    background-color: #153940;
+    margin: 25px;
+    padding: 25px;
+    color: #bf9f63;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
 body {
     font-family: 'Tilt Neon';
     background-color: rgba(0,0,0,1);
@@ -88,7 +101,13 @@ h1,h2,h3 {
     object-fit: cover;
     width:100%;
     height:100%;
+}
 
+.mockup {
+    width: auto;
+    height: auto;
+    margin: 25px;
+    border-radius: 2%;
 }
 
 .parrafo {
