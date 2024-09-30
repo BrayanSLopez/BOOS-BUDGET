@@ -1,1 +1,40 @@
+-- Este es un procedimiento que muestra en una ventana los nombres, apellidos y 
+-- número de créditos de un usuario, filtrado por la cédula ingresada como argumento 
+-- de entrada, y en la otra ventana mostrará el valor de cada crédito que tenga el 
+-- usuario, su fecha de inicio y su fecha de fin:
 
+DELIMITER //
+CREATE PROCEDURE Creditos_Usuario(IN Cedula_Usuario INT) -- cédula como parámetro de entrada
+BEGIN
+	-- Se crea una variable para almacenar la cantidad de créditos que haya:
+    DECLARE Numero_Creditos INT;
+    
+    -- Obtenemos el número total de créditos del usuario utilizando la función
+    -- 'COUNT' y lo almacenamos en la variable anteriormente creada (Numero_Creditos):
+    SELECT COUNT(*) INTO Numero_Creditos
+    FROM Creditos c
+    INNER JOIN Presupuesto p
+    ON c.idPresupuesto = p.idPresupuesto
+    WHERE p.Cedula = Cedula_Usuario;
+
+    -- Realizamos una consulta para mostrar los nombres del usuario, sus apellidos y la cantidad de créditos
+    -- que tenga vinculados a su cuenta:
+    SELECT s.Nombres AS 'Nombre del Usuario', s.Apellidos AS 'Apellido del Usuario', Numero_Creditos AS 'Total de Créditos'
+    FROM Usuario s
+    WHERE Cedula = Cedula_Usuario;
+
+    -- Realizamos la segunda consulta para mostrar el valor de cada crédito vinculado, su fecha de inicio
+    -- y su fecha final:
+    SELECT c.MontoTotal AS 'Valor del Crédito', c.RangoInicial AS 'Inicio del Crédito', c.RangoFinal AS 'Fin del Crédito'
+    FROM Creditos c
+    INNER JOIN Presupuesto p
+    ON c.idPresupuesto = p.idPresupuesto
+    WHERE p.Cedula = Cedula_Usuario;
+
+END //
+DELIMITER ;
+
+-- Llamamos al procedimiento e ingresamos una cédula para comprobar:
+CALL Creditos_Usuario(1010101);
+
+SELECT * FROM clientes;
