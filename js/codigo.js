@@ -1,9 +1,9 @@
 function redirectInicio() {
-    window.location.href = "./index.html";
+    window.location.href = "./main/index.html";
 }
 
 function redirectSemestreI_II() {
-    window.location.href = "./SemestreI_II.html";
+    window.location.href = "./main/SemestreI_II.html";
 }
 
 function redirectSemestreIII() {
