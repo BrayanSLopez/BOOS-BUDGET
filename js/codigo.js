@@ -1,13 +1,13 @@
 function redirectInicio() {
-    window.location.href = "../index.html";
+    window.location.href = "https://brayanslopez.github.io/BOOS-BUDGET/index.html";
 }
 
 function redirectSemestreI_II() {
-    window.location.href = "../SemestreI_II";
+    window.location.href = "https://brayanslopez.github.io/BOOS-BUDGET/SemestreI_II";
 }
 
 function redirectSemestreIII() {
-    window.location.href = "../SemestreIII";
+    window.location.href = "https://brayanslopez.github.io/BOOS-BUDGET/SemestreIII";
 }
 /*codigo carrusel*/
 let currentIndex = 0;
