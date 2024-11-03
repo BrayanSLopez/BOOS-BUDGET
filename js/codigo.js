@@ -3,7 +3,7 @@ function redirectInicio() {
 }
 
 function redirectSemestreI_II() {
-    window.location.href = "https://github.com/BrayanSLopez/BOOS-BUDGET/blob/main/SemestreI_II";
+    window.location.href = "/SemestreI_II";
 }
 
 function redirectSemestreIII() {
