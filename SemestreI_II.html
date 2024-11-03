@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boss Budget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo" class="logo-img">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#"onclick="redirectInicio()">INICIO</a></li>
+                <li><a href="#"onclick="redirectSemestreI_II()">SEMESTRE I - II</button></li>
+                <li><a href="#"onclick="redirectSemestreIII()">SEMESTRE III</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="general">
+        <section class="intro">
+            <h1>Boss Budget - SemestreI y II</h1>
+        </section>
+
+        <section class="description">
+            <div class="text">
+                <h2>Planteamiento del problema</h2>
+                <p>¿Cómo instruir a las personas al adecuado manejo del presupuesto a través de una aplicación móvil/multiplataforma que cumpla con las necesidades de cada usuario y mejore su calidad de vida mediante herramientas financieras?</p>
+            </div>  
+            <div>
+                <img class="fichaimg" src="images/FichaExperimento.png" alt="Ficha del experimento">
+            </div>  
+        </section>
+
+        <section class="description">
+            <div>
+                <iframe class="doc" src="docs/Boss-Budget.pdf" width="600px" height="800px"></iframe>
+            </div>
+            <div class="text">
+                <h2>Objetivos específicos</h2>
+                <ul class="lista">
+                    <li>Diseñar un modelo estadístico que me permita recolectar los datos para identificar los usos financieros y las falencias.</li>
+                    <li>Desarrollar una encuesta que permita el análisis de los datos de nuestra estadística en el uso de aplicaciones financieras.</li>
+                    <li>Diseñar el maquetado de la aplicación.</li>
+                    <li>Aplicar triple restricción al proyecto</li>
+                    <li>Diseñar hipótesis a través de nuestro método de recolección de datos</li>
+                    <li>Aplicación de la matriz de riesgos. </li>
+                    <li>Definir un gestor de base de datos para nuestro proyecto</li>
+                    <li>Aplicar el modelo entidad relación a nuestro proyecto</li>
+                    <li>Definir el lenguaje de programación más óptimo que vamos a utilizar</li>
+                </ul>
+            </div>    
+        </section>
+        <section class="description">
+            <div class="text">
+                <h2>Introducción</h2>
+                <p>Las finanzas personales en nuestro entorno son consideradas como algo transitorio, por lo cual se aborda de manera superficial y no se le da la importancia necesaria. Esto como consecuencia lleva a las personas a tener una negativa administración de sus ingresos, conduciendo a secuelas como tener que solicitar préstamos constantes, trabajar solo para subsistir , no poder ahorrar y no cumplir metas financieras. Esto en el presente no es solo una falencia sino que es perjudicial para sobrellevar la situación financiera del país y del mundo, ya que no se es consciente de la importancia de mejorar los hábitos financieros y el impacto positivo que puede ocasionar en la vida cotidiana de cada persona.
+                    A dónde se quiere llegar, es a poder ofrecer a las personas una opción factible para mejorar su situación financiera, logrando un control financiero de manera ordenada y completa. En este contexto exploramos las necesidades presentadas por las personas y se buscará que a partir de una serie de herramientas se pueda encontrar una solución a corto, mediano o largo plazo dependiendo de las secuelas evidenciadas.
+                    En este escrito se expondrá el proceso de desarrollo de una app móvil que cubra las necesidades extraídas de una recopilación de datos que tomaremos de encuestas dirigidas a todas aquellas personas interesadas en manejar su presupuesto de manera digital, de estos datos se busca agrupar los hábitos perjudiciales más repetitivos entre estas. A partir de esto la app será capaz de brindar herramientas como mostrar de manera cronológica un presupuesto tanto presente como futuro, registrar ingresos y egresos tanto fijos como variables, debitar pagos automáticamente por medio de notificaciones, brindar tips para el mejoramiento de hábitos financieros, personalizar su perfil y manejar diferentes categorías de ingreso de datos dependiendo del usuario.</p>
+            </div>  
+            <div>
+                <img src="images/budget.png" alt="budget" class="imggeneral"/>
+            </div>  
+        </section>
+        <section class="description">
+            <div>
+                <img src="images/MapaEmpatia.png" alt="MapaEmpatia" class="imggeneral"/>
+            </div> 
+            <div class="text">
+                <h2>Metodología</h2>
+                <p>El objetivo de la presente investigación será la recolección de información clara y completa de las personas a través de una serie de encuestas que tendrán como finalidad conocer sus hábitos financieros, sus experiencias y opiniones frente a herramientas financieras completas y  en el caso de estar interesadas en una nueva herramienta de este nivel, cuál sería la funcionalidad que destacaría frente a las ya existentes.</p>
+            </div>  
+        </section>
+        <div class="solitario">
+            <h2>Instrumento de recolección de datos</h2>
+        </div>
+        <section class="description">
+            <div class="text">
+                <h2>Encuesta analitica online con restrospectiva</h2>
+                <ul class="lista">
+                    <li>Es una encuesta que analiza información adquirida según preguntas cortas y concretas de formato abierto y cerrado  referente a la experiencia del encuestado de manera online.</li>
+                    <li>La realización de la encuesta será a través de la plataforma Microsoft Forms, haciendo uso de un correo personal por cada usuario que participe en la misma.</li>
+                  </ul>
+            </div>  
+            <div>
+                <h3>Encuesta online</h3>
+                <a href="https://forms.office.com/r/4Bnr00V7KH" target="_blank" class="enlace">Ingrese a la encuesta</a>
+                <h3>Resultados de Encuesta de seguimiento presupuestal</h3>
+                <a href="https://forms.office.com/Pages/AnalysisPage.aspx?AnalyzerToken=8lk4spmxeGsIByi0wmnZxkSeST1p4b5s&id=iISfkzSdDEemwIz1m5QbtvvFYtrViWtJkVpkPeo0-fFUNk9PSU9HMTBYSVMwSjJRNEFPRkM1TzIxSC4u" target="_blank" class="enlace">Respuestas de la encuesta</a>
+            </div> 
+        </section>
+        <div class="solitario">
+            <h2>Graficas tomadas del resultado de la encuesta</h2>
+        </div>
+        <section class="description">
+            <div class="text">
+                <h3>¿Qué motivó impide aplicar recurrentemente un debido hábito para el manejo del presupuesto personal y/o familiar?</h3>
+                <img src="images/Grafica1.png" alt="Grafica1" class="imggeneral"/>
+            </div> 
+            <div class="text">
+                <h3>Preguntas cerradas</h3>
+                <p> A partir de las preguntas cerradas se sacaron los siguientes resultados:
+                    De la interrogante “Actualmente usted ¿Utiliza alguna herramienta para llevar el manejo de su presupuesto?” resalta que:
+                    El 71% de los encuestados (34)  responde no utilizar, y el 29% (14) restante utiliza diferentes métodos de los cuales destaca el uso de tablas de excel. 
+                    Y de la interrogante “Partiendo de su experiencia o necesidad ¿Qué factores son importantes para que una aplicación web, móvil o alguna herramienta tecnológica deba implementar para ayudar a su control de gastos o corregir alguna herramienta existente?” resalta que:
+                    La gran mayoría de encuestados buscan una herramienta que tenga una interfaz sencilla, donde los datos y resultados se reflejen gráficamente, que el usuario no requiera tener grandes conocimientos financieros para manejar la herramienta, igualmente que al ser intuitiva maneje ciertos tips y sugerencias para poder aportar a el usuario una mejora educativa financieramente, logrando llevar unas finanzas inteligentes.</p>
+            </div> 
+        </section>
+        <section class="description"> 
+            <div class="text">
+                <h3>Si tuviera que llevar un control de su presupuesto, a través de una aplicación móvil, ¿Cuáles de estas características le gustaría tener a su servicio</h3>
+                <img src="images/Grafica2.png" alt="Grafica2" class="imggeneral"/>
+            </div> 
+            <div class="text">
+                <h3>Poniéndose en situación en la cuál una persona le pide la ayuda para controlar su vida económica y encontrar una estabilidad para mejorar su calidad de vida ¿Qué método le aconsejaría?</h3>
+                <img src="images/Grafica3.png" alt="Grafica3" class="imggeneral"/>
+            </div>  
+        </section>
+        <div class="solitario">
+            <h2>Adicionales</h2>
+        </div>
+        <section class="description"> 
+            <div class="text">
+                <h3>Triple restricción</h3>         
+                <img src="images/TripleRestriccion.png" alt="TripleRestriccion" class="imggeneral"/>
+            </div> 
+            <div class="text">
+                <h3>Matriz de riesgos</h3>       
+                <img src="images/MatrizRiesgos.png" alt="MatrizRiesgos" class="imggeneral"/>
+            </div>  
+        </section>
+        <section class="description"> 
+            <div class="text">
+                <h3>Aplicación de metodología</h3>         
+                <img src="images/TableroKanban.png" alt="TableroKanban" class="imggeneral"/>
+            </div> 
+            <div class="text">
+                <h3>Mapa de la propuesta</h3>       
+                <img src="images/MapaPropuesta.png" alt="MapaPropuesta" class="imggeneral"/>
+            </div>  
+        </section>
+
+
+
+
+    </div>
+    <footer>
+        <div class="contact">
+            <p>Contactos:</p>
+            <p>dajaureguim@academia.ussbbg.edu.co</p>
+            <p>joballemr@academia.ussbbg.edu.co</p>
+            <p>daescobarm@academia.ussbbg.edu.co</p>
+            <p>bslopez@academia.ussbbg.edu.co</p>
+        </div>
+        <div class="program">
+            <p><strong>Programa:</strong></p>
+            <p>Facultad de Ingeniería</p>
+            <p>Tecnología en Desarrollo de Software</p>
+        </div>
+        <div class="institution">
+            <p><strong>Institución:</strong></p>
+            <p>Universidad San Buenaventura</p>
+            <p>Bogotá D.C.</p>
+        </div>
+    </footer>
+    <script src="/js/codigo.js"></script>
+</body>
+</html>
