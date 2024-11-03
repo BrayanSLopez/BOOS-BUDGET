@@ -3,75 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boos Budget</title>
+    <title>Boss Budget</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo" class="logo-img">
+        <div>
+            <img class="logo-img" src="images/logo.png" alt="Logo" >
         </div>
         <nav>
             <ul>
-                <li><a href="#">INICIO</a></li>
-                <li><a href="#">SEMESTRE I - II</a></li>
-                <li><a href="#">SEMESTRE III</a></li>
+                <li><a href="#"onclick="redirectInicio()">INICIO</a></li>
+                <li><a href="#"onclick="redirectSemestreI_II()">SEMESTRE I - II</button></li>
+                <li><a href="#"onclick="redirectSemestreIII()">SEMESTRE III</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="intro">
-        <h1>Boos Budget</h1>
+    <div class="general">
+        <section class="intro">
+            <h1>Boss Budget</h1>
+            <div>
+                <iframe class="video" src="https://www.youtube.com/embed/AnS2guMmKh8?si=pj1pvO2-Ku6fmlm3" title="Speech" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="description">
+        <div class="text">
+            <h2>¿Qué se busca con Boss Budget?</h2>
+            <p>Boss Budget será una Aplicación móvil y web que se podrá manejar desde distintos dispositivos electrónicos, la cual busca mejorar los hábitos y las finanzas de las personas que la utilicen, ofreciendo múltiples funcionalidades, convirtiéndola en una aplicación demasiado intuitiva y sencilla de manejar.</p>
+        </div>
         <div>
-          <video class="video" controls>
-            <source src="images/BOSS-BUDGET.mp4" type="video/mp4">
-            <source src="image/BOOS-BUDGET.mp4" type="video/webm">
-            <source src="image/BOOS-BUDGET.mp4" type="video/ogg">
-          </video>
+            <img src="images/Finanzas.png" alt="Icono Finanzas" class="imggeneral"/>
         </div>
-    </section>
+        </section>
 
-    <section class="description">
-      <div class="text">
-        <h2>¿Qué se busca con Boos Budget?</h2>
-        <p>Boos Budget será una Aplicación móvil y web que se podrá manejar desde distintos dispositivos electrónicos, la cual busca mejorar los hábitos y las finanzas de las personas que la utilicen, ofreciendo múltiples funcionalidades, convirtiéndola en una aplicación demasiado intuitiva y sencilla de manejar.</p>
-      </div>
-      <div>
-        <img src="images/img.png" alt="Icono Finanzas" class="description-img">
-      </div>
-    </section>
+        <section class="objective">
+            <h2>Objetivo General</h2>
+            <p>Implementar herramientas para la gestión de finanzas mediante una app móvil, lo cual controlará gastos personales, familiares y sociales.</p>
+        </section>
 
-    <section class="objective">
-        <h2>Objetivo General</h2>
-        <p>Implementar herramientas para la gestión de finanzas mediante una app móvil, lo cual controlará gastos personales, familiares y sociales.</p>
-    </section>
-
-    <section class="team-members">
-        <h2>Integrantes</h2>
-        <div class="members">
-            <div class="member">
-                <img src="images/prj.png" alt="David Jáuregui" class="member-img">
-                <p>David Jáuregui</p>
-                <p>Frontend</p>
+        <section class="team-members">
+            <h2>Integrantes</h2>
+            <div class="members">
+                <div class="member">
+                    <img src="images/prj.png" alt="David Jáuregui" class="member-img">
+                    <p>David Jáuregui</p>
+                    <p>Frontend</p>
+                </div>
+                <div class="member">
+                    <img src="images/prj.png" alt="Andrés Ballén" class="member-img">
+                    <p>Andrés Ballén</p>
+                    <p>Backend</p>
+                </div>
+                <div class="member">
+                    <img src="images/prj.png" alt="Dayana Escobar" class="member-img">
+                    <p>Dayana Escobar</p>
+                    <p>Bases de datos</p>
+                </div>
+                <div class="member">
+                    <img src="images/prj.png" alt="Brayan López" class="member-img">
+                    <p>Brayan López</p>
+                    <p>Director General</p>
+                </div>
             </div>
-            <div class="member">
-                <img src="images/prj.png" alt="Andrés Ballén" class="member-img">
-                <p>Andrés Ballén</p>
-                <p>Backend</p>
-            </div>
-            <div class="member">
-                <img src="images/prj.png" alt="Dayana Escobar" class="member-img">
-                <p>Dayana Escobar</p>
-                <p>Bases de datos</p>
-            </div>
-            <div class="member">
-                <img src="images/prj.png" alt="Brayan López" class="member-img">
-                <p>Brayan López</p>
-                <p>Director General</p>
-            </div>
-        </div>
-    </section>
-
+        </section>
+    </div>
     <footer>
         <div class="contact">
             <p>Contactos:</p>
@@ -91,5 +88,6 @@
             <p>Bogotá D.C.</p>
         </div>
     </footer>
+    <script src="/js/codigo.js"></script>
 </body>
 </html>
