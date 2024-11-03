@@ -1,29 +1,31 @@
-@font-face {
-    font-family: 'Playpen Sans';
-    src: url('fonts/playpen-sans.woff2') format('woff2'),
-         url('fonts/playpen-sans.woff') format('woff');
-}
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Playpen+Sans&family=Press+Start+2P&family=Tilt+Neon&display=swap');
 
-@font-face {
-    font-family: 'Tilt Neon';
-    src: url('fonts/tilt-neon.woff2') format('woff2'),
-         url('fonts/tilt-neon.woff') format('woff');
-}
-
-:root {
-    --font-family-playpen-sans: 'Playpen Sans', sans-serif;
-    --font-family-tilt-neon: 'Tilt Neon', sans-serif;
-}
 
 /* CSS Reset */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+h1,h2 {
+    margin-bottom: 16px;
+    margin-top: 16px;
+    font-size: 45px;
+    font-family: 'Playpen' !important;
+    font-weight: bold !important; 
+}
+
+h3 {
+    margin-bottom: 16px;
+    margin-top: 16px;
+    font-size: 30px;
+    font-family: 'Playpen' !important;
+    font-weight: bold !important; 
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Tilt Neon';
+    position: relative;
 }
 
 header {
@@ -32,16 +34,33 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    box-sizing: border-box;
+}
+
+
+.general {
+    justify-content: center;
+    padding-top: 90px; 
 }
 
 .video {
-    width: 640px; 
-    height: 360px;
+    width: 750px; 
+    height: 420px;
+    border-radius: 5%;
+}
+.videoP {
+    width: 550px; 
+    height: 600px;
     border-radius: 5%;
 }
 
 .logo-img {
     width: 80px;
+    height: 80px;
 }
 
 nav ul {
@@ -56,6 +75,10 @@ nav ul li a {
     font-weight: bold;
 }
 
+nav ul li a:hover {
+    background-color: #892d83;
+    border-radius: 5%; 
+}
 
 .intro {
     text-align: center;
@@ -63,26 +86,22 @@ nav ul li a {
 }
 
 .intro h1 {
-    font-size: 3rem;
-    color: #d65ebe;
-    margin-bottom: 30px;
-    font-family: 'Playpen Sans';
-}
-
-.team p {
-    font-size: 1.2rem;
+    font-size: 60px;
+    color: #892d83;
 }
 
 .description {
-    height: 640px;
+    display: inline-block;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
     padding-left: 180px;
+    margin: 20px;
 }
 
 .text {
+    font-size: 20px;
     width: 60%;
     text-align: center; 
     display: flex;
@@ -90,14 +109,52 @@ nav ul li a {
     justify-content: center; 
 }
 
-.image {
-    width: 30%;
+.solitario {
+    text-align: center; 
 }
 
-.image img {
-    width: 100%;
-    height: auto;
+.enlace {
+    display: inline-block; 
+    padding: 10px 20px; 
+    margin: 10px; 
+    color: white;
+    background-color: #892d83;; 
+    text-decoration: none; 
+    border-radius: 5px;
+    font-weight: bold; 
+    transition: background-color 0.3s ease; 
 }
+
+.enlace:hover {
+    background-color: #f8a933;
+}
+
+.doc {
+    border-radius: 3%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.imggeneral {
+    width: 800px;
+    height: 420px;
+    border-radius: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.fichaimg {
+    width: 500px;
+    height: 700px;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.lista {
+    padding-left: 30px;
+    text-align: left;
+}
+
 .objective {
     padding: 20px;
     text-align: center;
@@ -138,6 +195,66 @@ nav ul li a {
     height: auto;
 }
 
+.carrusel {
+    position: relative;
+    width: 80%;
+    max-width: 850px;
+    margin: auto;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carrusel-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carrusel-item {
+    min-width: 100%;
+    text-align: center;
+    background-color: #f6ac3c;
+}
+
+.carrusel-item img {
+    width: 800px;
+    height: 700px;
+    border-bottom: 3px solid #000000;
+    border-right: 3px solid #000000;
+    margin-bottom: 20px;
+    border-radius: 3%;
+}
+
+.carrusel-item h3 {
+    padding: 10px;
+    font-size: 30px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #892d83;
+}
+
 footer {
     display: flex;
     justify-content: space-around;
@@ -149,4 +266,3 @@ footer {
 footer div p {
     margin: 5px 0;
 }
-
