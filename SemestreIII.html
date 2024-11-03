@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boss Budget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo" class="logo-img">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#"onclick="redirectInicio()">INICIO</a></li>
+                <li><a href="#"onclick="redirectSemestreI_II()">SEMESTRE I - II</button></li>
+                <li><a href="#"onclick="redirectSemestreIII()">SEMESTRE III</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="general">
+        <section class="intro">
+            <h1>Boss Budget - SemestreIII</h1>
+        </section>
+        <section class="description">
+            <div>
+                <iframe class="videoP" src=images/Video.mp4 title="BossBudget" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="text">
+                <h2>Objetivos específicos</h2>
+                <ul class="lista">
+                    <li>Diseñar el diagrama de clases correspondiente a la aplicación</li>
+                    <li>Realizar la conexión de la base de datos con el lenguaje de programación seleccionado</li>
+                    <li>Aplicar la metodología Scrum en el proyecto haciendo uso de herramientas como Jira</li>
+                    <li>Diseñar el CRUD correspondiente a la base de datos de la aplicación</li>
+                    <li>Definir los requerimientos funcionales y no funcionales de la aplicación</li>
+                    <li>Actualizar los mockups y diseñar el logo definitivo</li>
+                </ul>
+            </div>    
+        </section>
+        <section class="description">
+            <div class="text">
+                <h2>Perspectiva del producto</h2>
+                <p>La aplicación Boss-Budget será un producto diseñado específicamente para dispositivos móviles, tanto en plataformas iOS y Android, siendo esto fundamental gracias a la accesibilidad que brinda a los usuarios, de está manera podrían gestionar y registrar sus finanzas de manera rápida y eficaz,  y lo más importante en cualquier momento y lugar. El diseño debe ser óptimo e intuitivo, todo con el fin de ofrecer y garantizar una experiencia fluida al usuario haciendo ver la aplicación fácil de usar.<br>Como concepto innovador en este ámbito, en caso de que el usuario lo desee y lo permita, la aplicación se integrará con funciones del sistema operativo del dispositivo, como la lectura automática de notificaciones de mensajes de texto (por ejemplo, pagos realizados a través de servicios como Nequi), para registrar transacciones de manera automática en la plataforma, optimizando el proceso de registro de transacciones; esto permitirá que los usuarios tengan un seguimiento en tiempo real de sus finanzas, sin necesidad de ingresar manualmente todos los datos.</p>
+            </div>    
+            <div>
+                <iframe class="doc" src="docs/Boss-Budget-Formato-IEEE.pdf" width="600px" height="800px"></iframe>
+            </div>
+        </section>
+        <div class="solitario">
+            <h2>Diagramas UML</h2>
+        </div>
+        <!-- Este es el codigo del carrusel -->
+        <div class="carrusel">
+            <div class="carrusel-slide">
+                <div class="carrusel-item">
+                    <h3>Diagrama de casos de uso</h3>
+                    <img src="/images/DiagramaCasosUso.png" alt="CasosDeUso">                   
+                </div>
+                <div class="carrusel-item">
+                    <h3>Diagrama de estado - Objeto Ingresos</h3>
+                    <img src="/images/DiagramaEstados.png" alt="DiagramaEstados">                   
+                </div>
+                <div class="carrusel-item">
+                    <h3>Diagrama de actividades - caso de uso (Registrarse)</h3>
+                    <img src="/images/CasoResgistrarse.png" alt="CasoRegistrarse">                   
+                </div>
+                <div class="carrusel-item">
+                    <h3>Diagrama de actividades - caso de uso (Creación presupuesto)</h3>
+                    <img src="/images/CasoCreacioPresupuesto.png" alt="CasoCreacionPresupuesto">                   
+                </div>
+                <div class="carrusel-item">
+                    <h3>Diagrama de actividades - caso de uso (Reportes usuario)</h3>
+                    <img src="/images/CasoReporteUsuario.jpg" alt="CasoReportesUsuario">                   
+                </div>
+                <div class="carrusel-item">
+                    <h3>Diagrama de actividades - caso de uso (Pago de Suscripción)</h3>
+                    <img src="/images/CasoPagoSuscripcion.jpg" alt="CasoPagoSuscripcion">                   
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">❮</button>
+            <button class="next" onclick="moveSlide(1)">❯</button>
+        </div>
+        <!-- Este es el codigo del carrusel -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <footer>
+        <div class="contact">
+            <p>Contactos:</p>
+            <p>dajaureguim@academia.ussbbg.edu.co</p>
+            <p>joballemr@academia.ussbbg.edu.co</p>
+            <p>daescobarm@academia.ussbbg.edu.co</p>
+            <p>bslopez@academia.ussbbg.edu.co</p>
+        </div>
+        <div class="program">
+            <p><strong>Programa:</strong></p>
+            <p>Facultad de Ingeniería</p>
+            <p>Tecnología en Desarrollo de Software</p>
+        </div>
+        <div class="institution">
+            <p><strong>Institución:</strong></p>
+            <p>Universidad San Buenaventura</p>
+            <p>Bogotá D.C.</p>
+        </div>
+    </footer>
+    <script src="/js/codigo.js"></script>
+</body>
+</html>
