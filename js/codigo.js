@@ -1,13 +1,13 @@
 function redirectInicio() {
-    window.location.href = "../index.html";
+    window.location.href = "./index.html";
 }
 
 function redirectSemestreI_II() {
-    window.location.href = "../SemestreI_II.html";
+    window.location.href = "./SemestreI_II.html";
 }
 
 function redirectSemestreIII() {
-    window.location.href = "../SemestreIII.html";
+    window.location.href = "./SemestreIII.html";
 }
 /*codigo carrusel*/
 let currentIndex = 0;
