@@ -29,7 +29,7 @@ body {
 }
 
 header {
-    background-color: #892d83;
+    background-color: #f8a933;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -76,7 +76,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #fff;
+    background-color: #892d83;
     border-radius: 5%; 
 }
 
@@ -227,6 +227,37 @@ nav ul li a:hover {
 }
 
 .carrusel-item h3 {
+    padding: 10px;
+    font-size: 30px;
+}
+
+.carrusel-2 {
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carrusel-item-2 {
+    min-width: 100%;
+    text-align: center;
+    background-color: #f6ac3c;
+}
+
+.carrusel-item-2 img {
+    width: 550px;
+    height: 780px;
+    border-bottom: 3px solid #000000;
+    border-right: 3px solid #000000;
+    margin-bottom: 20px;
+    border-radius: 1%;
+}
+
+.carrusel-item-2 h3 {
     padding: 10px;
     font-size: 30px;
 }
