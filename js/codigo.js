@@ -10,22 +10,27 @@ function redirectSemestreIII() {
     window.location.href = "./SemestreIII.html";
 }
 /*codigo carrusel*/
-let currentIndex = 0;
+let currentIndices = {
+    'carrusel-1': 0,
+    'carrusel-2': 0
+};
 
-function moveSlide(direction) {
-    const slides = document.querySelectorAll('.carrusel-item');
+function moveSlide(direction, carouselId) {
+    const carousel = document.getElementById(carouselId);
+    const slideClass = carouselId === 'carrusel-2' ? '.carrusel-item-2' : '.carrusel-item';
+    const slides = carousel.querySelectorAll(slideClass);
     const totalSlides = slides.length;
     
-    currentIndex += direction;
+    currentIndices[carouselId] += direction;
     
-    if (currentIndex >= totalSlides) {
-        currentIndex = 0;
+    if (currentIndices[carouselId] >= totalSlides) {
+        currentIndices[carouselId] = 0;
     }
-    if (currentIndex < 0) {
-        currentIndex = totalSlides - 1;
+    if (currentIndices[carouselId] < 0) {
+        currentIndices[carouselId] = totalSlides - 1;
     }
     
-    const carouselSlide = document.querySelector('.carrusel-slide');
-    carouselSlide.style.transform = `translateX(-${currentIndex * 100}%)`;
+    const carouselSlide = carousel.querySelector('.carrusel-slide');
+    carouselSlide.style.transform = `translateX(-${currentIndices[carouselId] * 100}%)`;
 }
 /*codigo carrusel*/
